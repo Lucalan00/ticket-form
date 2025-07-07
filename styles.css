@@ -1,37 +1,84 @@
+/* Estilos globales */
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #f4f4f4;
   padding: 20px;
 }
 
+/* Secciones del formulario */
 fieldset {
   border: 1px solid #ccc;
-  margin-bottom: 20px;
-  padding: 10px;
   background: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
 }
 
+/* Inputs y selects */
 input, select {
   display: block;
   width: 100%;
-  margin: 10px 0;
   padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
+/* Mensajes de validación */
 .msg {
-  font-size: 0.8em;
+  font-size: 0.85em;
+  margin-top: -6px;
+  margin-bottom: 6px;
   color: red;
 }
 
-.valid {
+/* Bordes para estados válidos y con error */
+input.valid {
   border: 2px solid green;
 }
 
-.error {
+input.error {
   border: 2px solid red;
 }
 
+/* Precio total */
 #precio-total {
   font-weight: bold;
   margin-top: 10px;
+}
+
+/* Logo tarjeta */
+#logo-tarjeta {
+  width: 40px;
+  display: block;
+  margin: 6px 0;
+}
+
+/* Botón y mensajes generales */
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#mensaje-formulario {
+  margin: 10px 0;
+  color: orange;
+  font-weight: bold;
+}
+
+/* Resumen y contador */
+#resumen-compra {
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+#contador-compra {
+  margin-top: 10px;
+  font-weight: bold;
 }
