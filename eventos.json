@@ -1,0 +1,38 @@
+[
+  {
+    "evento": "Concierto de rock",
+    "fecha": "2024-07-10",
+    "lugar": "Estadio Madre de Ciudades",
+    "ciudad": "Santiago del Estero",
+    "horario": "21:00",
+    "artista": "Los Redonditos de Ricota (tributo)",
+    "genero": "Rock",
+    "precio": 1500,
+    "moneda": "ARS",
+    "entradas_disponibles": 500
+  },
+  {
+    "evento": "Festival de Música Electrónica",
+    "fecha": "2024-07-15",
+    "lugar": "Complejo Urbano",
+    "ciudad": "Santiago del Estero",
+    "horario": "18:00",
+    "artista": "Varios DJs",
+    "genero": "Electrónica",
+    "precio": 2000,
+    "moneda": "ARS",
+    "entradas_disponibles": 1000
+  },
+  {
+    "evento": "Noche de Jazz",
+    "fecha": "2024-07-20",
+    "lugar": "Bar Cultural La Ferretería",
+    "ciudad": "Santiago del Estero",
+    "horario": "22:00",
+    "artista": "Trío de Jazz local",
+    "genero": "Jazz",
+    "precio": 800,
+    "moneda": "ARS",
+    "entradas_disponibles": 100
+  }
+]

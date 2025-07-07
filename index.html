@@ -1,0 +1,72 @@
+i<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compra de Tickets</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <form id="ticket-form" novalidate>
+    <fieldset>
+      <legend>Datos del Comprador</legend>
+      <input type="text" id="nombre" placeholder="Nombre completo" required />
+      <span class="msg" id="msg-nombre"></span>
+
+      <input type="email" id="email" placeholder="Correo electrónico" required />
+      <span class="msg" id="msg-email"></span>
+
+      <input type="text" id="telefono" placeholder="Teléfono (10 dígitos)" required />
+      <span class="msg" id="msg-telefono"></span>
+
+      <input type="text" id="nacimiento" placeholder="Fecha de nacimiento (dd/mm/yyyy)" required />
+      <span class="msg" id="msg-nacimiento"></span>
+
+      <select id="pais" required></select>
+      <span class="msg" id="msg-pais"></span>
+    </fieldset>
+
+    <fieldset>
+      <legend>Datos del Evento</legend>
+      <select id="evento" required></select>
+      <span class="msg" id="msg-evento"></span>
+
+      <input type="text" id="fecha-evento" readonly />
+      <input type="text" id="ubicacion-evento" readonly />
+
+      <select id="tipo-entrada">
+        <option value="General">General</option>
+        <option value="VIP">VIP</option>
+        <option value="Palco">Palco</option>
+      </select>
+
+      <input type="number" id="cantidad" min="1" max="6" placeholder="Cantidad de entradas" required />
+      <span class="msg" id="msg-cantidad"></span>
+
+      <div id="precio-total"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Datos de Pago</legend>
+      <input type="text" id="numero-tarjeta" placeholder="Número de tarjeta (16 dígitos)" required />
+      <img id="logo-tarjeta" />
+      <span class="msg" id="msg-tarjeta"></span>
+
+      <input type="text" id="vencimiento" placeholder="Vencimiento (MM/AA)" required />
+      <span class="msg" id="msg-vencimiento"></span>
+
+      <input type="text" id="cvv" placeholder="CVV" required />
+      <span class="msg" id="msg-cvv"></span>
+
+      <input type="text" id="nombre-tarjeta" placeholder="Nombre en la tarjeta" required />
+      <span class="msg" id="msg-nombre-tarjeta"></span>
+    </fieldset>
+
+    <div id="mensaje-formulario"></div>
+    <button type="submit" disabled>Comprar</button>
+    <div id="resumen-compra"></div>
+    <div id="contador-compra"></div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
